@@ -129,30 +129,30 @@
                 });
 
                 const productRow = `
-                                                        <tr>
-                                                            <td>
-                                                                <select name="products[${productIndex}][id]" class="form-select product-select" required>
-                                                                    ${options}
-                                                                </select>
-                                                            </td>
-                                                            <td>
-                                                                <input type="number" name="products[${productIndex}][quantity]" 
-                                                                       class="form-control quantity" min="1" value="1" required>
-                                                            </td>
-                                                            <td>
-                                                                <input type="number" name="products[${productIndex}][unit_price]" 
-                                                                       class="form-control unit-price" step="0.01" required>
-                                                            </td>
-                                                            <td>
-                                                                <input type="number" name="products[${productIndex}][subtotal]" 
-                                                                       class="form-control subtotal" step="0.01" readonly required>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-danger btn-sm remove-product">
-                                                                    <i class="fas fa-trash"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>`;
+                    <tr>
+                        <td>
+                            <select name="products[${productIndex}][id]" class="form-select product-select" required>
+                                ${options}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" name="products[${productIndex}][quantity]" 
+                                    class="form-control quantity" min="1" value="1" required>
+                        </td>
+                        <td>
+                            <input type="number" name="products[${productIndex}][unit_price]" 
+                                    class="form-control unit-price" step="0.01" required>
+                        </td>
+                        <td>
+                            <input type="number" name="products[${productIndex}][subtotal]" 
+                                    class="form-control subtotal" step="0.01" readonly required>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm remove-product">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>`;
 
                 $('#products-table tbody').append(productRow);
                 productIndex++;
